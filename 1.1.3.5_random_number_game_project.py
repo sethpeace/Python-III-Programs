@@ -8,7 +8,7 @@ import os, random
 
 def cls():
 	os.system("clear")
-	print("SETH PEACE - THE NUMBER-GUESSER GAME")
+	print("SETH PEACE - PYTHON III - THE NUMBER-GUESSER GAME")
 
 number          = random.randint(0, 50)
 guesses         = 0
@@ -32,12 +32,12 @@ while not quit:
 		else:
 			guesses += 1
 			if guess < number:
-				msg = f"\n{guess} is too low!\nYou have {GUESSES_ALLOWED-guesses} guesses left."
+				msg = f"\n{guess} is too low!\nYou have {GUESSES_ALLOWED-guesses} guess(es) left."
 			elif guess > number:
-				msg = f"\n{guess} is too high!\nYou have {GUESSES_ALLOWED-guesses} guesses left."
+				msg = f"\n{guess} is too high!\nYou have {GUESSES_ALLOWED-guesses} guess(es) left."
 			else:
 				cls()
-				print(f"\nYou won! The number was {number}!\nYou had {GUESSES_ALLOWED-guesses} guesses left.")
+				print(f"\nYou won! The number was {number}!\nYou had {GUESSES_ALLOWED-guesses} guess(es) left.")
 				print("\nGood Job!")
 				quit = True
 			if guess != number and guesses == GUESSES_ALLOWED:

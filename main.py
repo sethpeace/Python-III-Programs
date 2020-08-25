@@ -13,6 +13,7 @@ quit      = False
 def cls():
 	os.system("clear")
 	print("SETH PEACE - PYTHON III - ASSIGNMENT AUTO-CATALOGGER AND RETRIEVER")
+	print("Check out the source code at https://github.com/sethpeace/Python-III-Programs")
 
 while not quit:
 	while not exit_loop:
