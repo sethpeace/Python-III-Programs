@@ -47,21 +47,21 @@ for math_problem in math_problems:
 						"problem": math_problem})
 
 cls()
-print("\nAnd that's the end! Check out how you did:\n[", end='')
+print("\nAnd that's the end! Check out how you did:\n[ ", end='')
 num_correct = 0
 for result in results:
 	if result["correct"]:
-		print("✓", end='')
+		print("✓ ", end='')
 		num_correct += 1
 	else:
-		print("✗", end='')
-print(f"] {num_correct}/{NUM_PROBLEMS} - {time.time()-total_start:.2f} sec\n")
+		print("✗ ", end='')
+print(f"] {num_correct}/{NUM_PROBLEMS} - Time: {time.time()-total_start:.2f} sec\n")
 for result in results:
 	answer         = result["answer"]
 	correct_answer = result["correct_answer"]
 	time_          = result["time"]
 	problem        = result["problem"]
 	if result["correct"]:
-		print(f" ✓ {problem:>5} - You Said: {answer:>3} - Actual Answer: {correct_answer:>3} - It Took You: {time_:>5.2f} sec")
+		print(f" ✓ {problem:>5} - You Said: {answer:>3} - Answer: {correct_answer:>3} - Time: {time_:>5.2f} sec")
 	else:
-		print(f" ✗ {problem:>5} - You Said: {answer:>3} - Actual Answer: {correct_answer:>3} - It Took You: {time_:>5.2f} sec")
+		print(f" ✗ {problem:>5} - You Said: {answer:>3} - Answer: {correct_answer:>3} - Time: {time_:>5.2f} sec")
