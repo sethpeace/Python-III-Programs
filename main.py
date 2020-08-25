@@ -27,7 +27,7 @@ while not quit:
 		print("\nList of availible files (highlighted files are projects):")
 		for i, file in enumerate(catalog):
 			if file.endswith("_project.py"):
-				print(f"\u001b[48;5;227m\u001b[30;1m({i+1:02d}) {file} \u001b[0m")
+				print(f"\u001b[48;5;227m\u001b[30m({i+1:02d}) {file} \u001b[0m")
 			else:
 				print(f"({i+1:02d}) {file}")
 
